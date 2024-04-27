@@ -142,3 +142,11 @@ If you were relying on this utility, you can define it yourself as follows:
 
     def is_sync_or_async_generator(obj: Any) -> bool:
         return isgeneratorfunction(obj) or isasyncgenfunction(obj)
+
+
+Removal of deprecated ``litestar.middleware.exceptions`` module and ``ExceptionHandlerMiddleware``
+--------------------------------------------------------------------------------------------------
+
+The deprecated ``litestar.middleware.exceptions`` module and the
+``ExceptionHandlerMiddleware`` have been removed. Since ``ExceptionHandlerMiddleware``
+has been applied automatically behind the scenes if necessary, no action is required.
